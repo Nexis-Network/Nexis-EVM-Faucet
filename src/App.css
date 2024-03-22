@@ -1,0 +1,127 @@
+.nexis-logo{
+    max-width: 50px;
+    border-radius: 10px;
+    margin: 4px;
+    background-color: black;
+    padding: 8px;
+}
+
+.connect-button {
+    background: linear-gradient(to bottom left, #141414, #171717)!important;
+    border: none;
+    border-radius: 8px;
+    color: white!important;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .connect-button:hover {
+    background: linear-gradient(to bottom left, #3d3d3d, #555555)!important;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 40vw;
+    position: relative;
+}
+
+.app-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0a0a;
+    background-image: url('https://raw.githubusercontent.com/Nexis-Network/Nexis-Brand-Kit/main/div.tetris-box.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(10px); */
+    z-index: -1;
+    opacity: 100%;
+    border: none;
+}
+
+.chakra-input {
+  max-width: 40vw;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.chakra-input:hover {
+  max-width: 40vw;
+  background-color: #0a0a0a;
+  color: #fff;
+  border-color: #0091ff !important;
+}
+
+.border-color {
+  color: none !important;
+  border: none !important;
+}
+.chakra-heading {
+  color: white;
+  border-bottom: none;
+}
+
+.chakra-button {
+min-width: 20vw !important;
+}
+
+.chakra-text {
+  color: #fff;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  font-variant: light;
+  align-items: center;
+  text-align: center;
+}
+
+.glassmorph {
+  background-color: #0a0a0a;
+  border-radius: 12px;
+  border: 1px solid #2b2b2b !important;
+  width: 65vw;
+  min-width: 55vw;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-height: 130vw;
+  opacity: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  animation: glowing-shadow 6s linear infinite;
+  box-shadow: var(--ds-shadow-border), 0px 1px 1px rgba(0,0,0,.02), 0px 4px 8px -4px rgba(0,0,0,.04), 0px 16px 24px -8px rgba(0,0,0,.06);
+}
+
+@media (max-width: 768px) {
+  .glassmorph {
+    min-height: 75vw;
+    min-width: 35vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .glassmorph {
+    max-width: 35vw;
+  }
+}
+
+@keyframes glowing-shadow {
+  0% {
+    box-shadow: var(--ds-shadow-border), 0px 1px 1px rgba(0, 0, 0, 0.02), 0px 4px 8px -4px rgba(0,0,0,.04), 0px 16px 24px -8px rgba(0,0,0,.06);
+  }
+  50% {
+    box-shadow: var(--ds-shadow-border), 0px 1px 1px rgba(0,0,0,.02), 0px 4px 8px -4px rgba(0,0,0,.04), 0px 16px 24px -8px rgba(0,0,0,.06), 0px 0px 10px 5px #ff0000, 0px 0px 20px 10px #ff7f00, 0px 0px 30px 15px #ffff00, 0px 0px 40px 20px #00ff00, 0px 0px 50px 25px #0000ff, 0px 0px 60px 30px #4b0082, 0px 0px 70px 35px #8f00ff;
+  }
+  100% {
+    box-shadow: var(--ds-shadow-border), 0px 1px 1px rgba(0,0,0,.02), 0px 4px 8px -4px rgba(0,0,0,.04), 0px 16px 24px -8px rgba(0,0,0,.06);
+  }
+}
+
+
+  .footer {
+    margin-top: auto; 
+  }
